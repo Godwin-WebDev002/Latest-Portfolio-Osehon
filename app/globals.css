@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-montserrat: "Montserrat", sans-serif;
+    --font-inter: "Inter", sans-serif;
+    --brand-orange: #F2561D;
+    --brand-orange-hover: #D9460F;
+    --brand-peach: #FDE6DC;
+    --brand-dark: #1F1F1F;
+    --brand-bg: #FFFFFF;
+  }
+
+  body {
+    font-family: var(--font-inter), sans-serif;
+    background-color: var(--brand-bg);
+    color: var(--brand-dark);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: var(--font-montserrat), sans-serif;
+  }
+}
+
+/* Custom Utilities for Slide Deck layout */
+.slide-container {
+  aspect-ratio: 16 / 9;
+  max-width: 1366px;
+  width: 100%;
+}
+
+/* Custom rounded pill shape */
+.rounded-stadium {
+  border-radius: 9999px;
+}
+
+.rounded-custom-pill {
+  border-radius: 120px;
+}
+
+/* Smooth custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(242, 86, 29, 0.3);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(242, 86, 29, 0.7);
+}
